@@ -1,3 +1,13 @@
+/* Define global CSS variables for colors (get exact hex codes from Figma) */
+:root {
+  --color-primary: #121212; /* Typically a very dark grey/black for QTify background */
+  --color-green: #34c94b;  /* The distinct green for accents/buttons */
+  /* Add other global variables if needed from Figma, e.g., fonts, spacings */
+}
+
+/* Below is the default Create React App CSS. You can keep it or remove parts
+   as your project styling evolves, especially if you override them. */
+
 .App {
   text-align: center;
 }
