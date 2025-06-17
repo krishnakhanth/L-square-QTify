@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // This imports your global CSS for styling
+import Navbar from './components/Navbar/Navbar'; // Import the Navbar component
+
+// Assuming you will later implement the Hero component as well,
+// you would uncomment and use it like this:
+// import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Render the Navbar component here */}
+      <Navbar />
+
+      {/* When you implement the Hero section, it will likely go here below the Navbar */}
+      {/* <Hero /> */}
+
+      {/* You can remove any remaining default Create React App content from this file if it's still present */}
     </div>
   );
 }

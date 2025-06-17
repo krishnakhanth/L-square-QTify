@@ -1,23 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import Button from "../Button/Button";
+
+import styles from "./Navbar.module.css"; // Corrected 'NavBar' to 'Navbar' (lowercase 'b')
+import Button from "../Button/Button"; // Changed to default import for Button component
 import Logo from "../Logo/Logo";
-import Search from "../Search/Search";
-import styles from "./Navbar.module.css";
+import Search from '../../assets/Search/Search'; 
 
-function Navbar({ searchData }) {
-  return (
-    <nav className={styles.navbar}>
-      <Link to="/">
-        <Logo />
-      </Link>
-      <Search
-        placeholder="Search a song of your choice"
-        searchData={searchData}
-      />
-      <Button>Give Feedback</Button>
-    </nav>
-  );
-}
+const NavBar = () => { // Note: The component name here is 'NavBar' (capital B), but the file is 'Navbar.jsx' (lowercase b). This might cause warnings or issues later, but the current error is about the CSS import.
+  return (
+    <nav className={styles.navBar}>
+      <Logo/>
+      <Search/>
+      <Button children="GIVE FEEDBACK" />
+    </nav>
+  );
+};
 
-export default Navbar;
+export default NavBar;

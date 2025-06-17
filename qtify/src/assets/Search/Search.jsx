@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./Search.module.css"
 // Corrected: 'SearchIcon.svg' to 'search-icon.svg' to match the file on disk
-import {ReactComponent as SearchIcon} from "../../assets/search-icon.svg" 
+import {ReactComponent as SearchIcon} from "../search-icon.svg"
 
 const Search = () => {
   return (
